@@ -4,16 +4,16 @@ import subprocess
 # Функции, которые будут выполняться при нажатии кнопок
 
 def run_module1():
-    subprocess.run(["python", "object_detection.py"])
+    subprocess.run(["python", "detection/object_detection.py"])
 
 def run_module2():
-    subprocess.run(["python", "motion_detection.py"])
+    subprocess.run(["python", "detection/motion_detection.py"])
 
 def run_module3():
-    subprocess.run(["python", "loitering_detection.py"])
+    subprocess.run(["python", "detection/loitering_detection.py"])
 
 def run_module4():
-    subprocess.run(["python", "abandoned_object_detection.py"])
+    subprocess.run(["python", "detection/abandoned_object_detection.py"])
 
 # Создание главного окна
 window = tk.Tk()

@@ -1,13 +1,12 @@
 # Импортируем необходимые библиотеки и модули
 from imutils.video import FPS
 import numpy as np
-import argparse
 import imutils
 import time
 import cv2
 
-prototxt_path = r"C:\Users\marin\PycharmProjects\Final_qualifying_work\MobileNetSSD_deploy.prototxt.txt"
-model_path = r"C:\Users\marin\PycharmProjects\Final_qualifying_work\MobileNetSSD_deploy.caffemodel"
+prototxt_path = r"C:\Users\marin\PycharmProjects\FinalQualifyingWork\models\MobileNetSSD_deploy.prototxt.txt"
+model_path = r"C:\Users\marin\PycharmProjects\FinalQualifyingWork\models\MobileNetSSD_deploy.caffemodel"
 
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
 	"bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
@@ -19,7 +18,7 @@ print("[INFO] loading model...")
 net = cv2.dnn.readNetFromCaffe(prototxt_path, model_path)
 
 #video_source = 0
-video_source = r"1_object.avi"
+video_source = r"resources/1_object.avi"
 
 
 print("[INFO] starting video stream...")

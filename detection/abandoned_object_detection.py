@@ -6,7 +6,7 @@ from resources.SOS import play_notification_sound
 
 #video_source = 0
 
-video_source = r"1_abandoned.avi"
+video_source = r"resources/1_abandoned.avi"
 cap = cv2.VideoCapture(video_source)
 
 

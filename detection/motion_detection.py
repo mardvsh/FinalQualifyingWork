@@ -6,11 +6,11 @@ from collections import deque
 from resources.SOS import play_notification_sound
 
 #video_source = 0
-video_source = r"4_motion.mp4"
+video_source = r"resources/4_motion.mp4"
 
 
 print("Loading model ...")
-model = load_model('../models/modelnew.h5')
+model = load_model(r"C:\Users\marin\PycharmProjects\FinalQualifyingWork\models\modelnew.h5")
 Q = deque(maxlen=128)
 vs = cv2.VideoCapture(video_source)
 (W, H) = (None, None)

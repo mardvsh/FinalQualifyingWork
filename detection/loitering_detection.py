@@ -5,8 +5,8 @@ import time
 import cv2
 from resources.SOS import play_notification_sound
 
-prototxt_path = r"C:\Users\marin\PycharmProjects\Final_qualifying_work\MobileNetSSD_deploy.prototxt.txt"
-model_path = r"C:\Users\marin\PycharmProjects\Final_qualifying_work\MobileNetSSD_deploy.caffemodel"
+prototxt_path = r"C:\Users\marin\PycharmProjects\FinalQualifyingWork\models\MobileNetSSD_deploy.prototxt.txt"
+model_path = r"C:\Users\marin\PycharmProjects\FinalQualifyingWork\models\MobileNetSSD_deploy.caffemodel"
 
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
            "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
@@ -23,8 +23,8 @@ loitering_threshold = 70
 
 print("[INFO] starting video stream...")
 
-#video_source = 0
-video_source = r"1_loitering.avi"
+video_source = 0
+#video_source = r"resources/1_loitering.avi"
 
 vs = cv2.VideoCapture(video_source)
 time.sleep(2.0)
