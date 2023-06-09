@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from collections import Counter, defaultdict
 
-from SOS import play_notification_sound
+from resources.SOS import play_notification_sound
 
 #video_source = 0
 

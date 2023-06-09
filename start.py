@@ -29,7 +29,7 @@ y = int((screen_height/2) - (window_height/2))
 window.geometry("{}x{}+{}+{}".format(window_width, window_height, x, y))
 
 # Добавление фонового изображения
-bg_image = tk.PhotoImage(file="1.png")
+bg_image = tk.PhotoImage(file="resources/1.png")
 bg_label = tk.Label(window, image=bg_image)
 bg_label.place(x=0, y=0, relwidth=1, relheight=1)
 

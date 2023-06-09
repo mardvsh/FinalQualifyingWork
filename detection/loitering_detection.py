@@ -1,10 +1,9 @@
-from imutils.video import VideoStream
 from imutils.video import FPS
 import numpy as np
 import imutils
 import time
 import cv2
-from SOS import play_notification_sound
+from resources.SOS import play_notification_sound
 
 prototxt_path = r"C:\Users\marin\PycharmProjects\Final_qualifying_work\MobileNetSSD_deploy.prototxt.txt"
 model_path = r"C:\Users\marin\PycharmProjects\Final_qualifying_work\MobileNetSSD_deploy.caffemodel"

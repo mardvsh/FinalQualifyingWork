@@ -1,19 +1,16 @@
 import numpy as np
-import argparse
-import pickle
 import cv2
-import os
 from keras.models import load_model
 from collections import deque
 
-from SOS import play_notification_sound
+from resources.SOS import play_notification_sound
 
 #video_source = 0
 video_source = r"4_motion.mp4"
 
 
 print("Loading model ...")
-model = load_model('modelnew.h5')
+model = load_model('../models/modelnew.h5')
 Q = deque(maxlen=128)
 vs = cv2.VideoCapture(video_source)
 (W, H) = (None, None)
